@@ -1,5 +1,5 @@
-from PIL import Image
-from selenium import webdriver
+import PIL
+import selenium
 
 
 class ScreenShot:
@@ -8,7 +8,7 @@ class ScreenShot:
         :type file_name_: str
         """
         self._filename = file_name_
-        self._driver = webdriver.PhantomJS()
+        self._driver = selenium.webdriver.PhantomJS()
         self._driver.set_window_size(1024, 768)
         self._crop_margin = 0
 
@@ -47,7 +47,7 @@ class ScreenShot:
         except Exception as e:
             print(e)
             return False
-        im = Image.open(self._filename)
+        im = PIL.Image.open(self._filename)
         im = im.crop((left, top, right, bottom))
         im.save(self._filename)
         im.close()
