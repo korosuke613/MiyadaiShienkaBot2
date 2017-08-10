@@ -1,4 +1,4 @@
-from myModules.Scraping import Scraping
+from app.myModules.Scraping import Scraping
 
 
 class MiyadaiScraping(Scraping):
