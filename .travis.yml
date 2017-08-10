@@ -9,4 +9,4 @@ script:
   - pytest --cov ./app
 after_success:
   - coveralls
-  - codecov
+  - codecov -t bf8418dd-dd8c-4954-8e85-2f9b974e3566
