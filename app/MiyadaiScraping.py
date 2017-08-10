@@ -1,4 +1,4 @@
-from app.myModules.Scraping import Scraping
+from myModules.Scraping import Scraping
 
 
 class MiyadaiScraping(Scraping):
@@ -36,6 +36,19 @@ class MiyadaiScraping(Scraping):
 
                 # ジェネレータとして返す
                 yield _dic
+
+    def check_pdf(self, screen_url):
+        self.set_url(screen_url)
+        div = self._soup.find('div', id='wrapper2')
+        as_ = div.findAll('a')
+        for a in as_:
+            if a.string is not None:
+                url = a.get('href')
+                if '.pdf' in url:
+                    pdf_url = 'http://gakumu.of.miyazaki-u.ac.jp' + url
+                    return pdf_url
+        return None
+
 
 if __name__ == "__main__":
     sc = MiyadaiScraping()
