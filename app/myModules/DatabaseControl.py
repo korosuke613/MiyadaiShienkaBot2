@@ -17,3 +17,18 @@ class DatabaseControl:
     def close_connect(self):
         self.cur.close()
         self.conn.close()
+        return True
+
+    def sql_execute(self, sql):
+        try:
+            self.cur.execute(sql)
+        except psycopg2.Error as e:
+            print(e)
+            raise
+
+    def sql_fetch_one(self):
+        # TODO 例外を作る
+        return self.cur.fetchone()
+
+    def commit(self):
+        self.conn.commit()
