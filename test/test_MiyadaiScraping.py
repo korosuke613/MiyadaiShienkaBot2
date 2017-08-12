@@ -3,7 +3,7 @@ from app.MiyadaiScraping import MiyadaiScraping
 
 def test_shienka_all_news_1():
     sc = MiyadaiScraping()
-    dic = sc.shienka_all_news()
+    dic = sc.fetch_shienka_news()
 
     latest = oldest = dic.__next__()
 

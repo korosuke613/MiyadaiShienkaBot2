@@ -1,5 +1,6 @@
 import os
 import psycopg2
+import pytest
 
 from app.myModules.DatabaseControl import DatabaseControl
 
@@ -12,13 +13,6 @@ def test_open_db_1():
 
 
 def test_open_db_2():
-    isExcept = False
-    db = DatabaseControl(os.environ["DATABASE_URL"])
-    try:
+    with pytest.raises(psycopg2.Error):
+        db = DatabaseControl(os.environ["DATABASE_URL"])
         db.sql_execute("SELECT * FROM noting")
-    except psycopg2.Error:
-        isExcept = True
-    finally:
-        db.close_connect()
-
-    assert isExcept is True
