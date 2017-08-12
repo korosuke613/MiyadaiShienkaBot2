@@ -1,0 +1,4 @@
+<map id="app.MiyadaiDataBase.MiyadaiDataBaseInput" name="app.MiyadaiDataBase.MiyadaiDataBaseInput">
+<area shape="rect" id="node2" href="$d4/d7e/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base.html" title="{app.MiyadaiDataBase.Miyadai\lDataBase\n||+ __init__()\l+ insert_dic_news()\l}" alt="" coords="16,207,218,307"/>
+<area shape="rect" id="node3" href="$d6/d81/classapp_1_1my_modules_1_1_database_control_1_1_database_control.html" title="{app.myModules.DatabaseControl.\lDatabaseControl\n||+ __init__()\l+ close_connect()\l+ sql_execute()\l+ sql_fetch_one()\l+ sql_fetch_all()\l+ commit()\l}" alt="" coords="5,5,228,159"/>
+</map>

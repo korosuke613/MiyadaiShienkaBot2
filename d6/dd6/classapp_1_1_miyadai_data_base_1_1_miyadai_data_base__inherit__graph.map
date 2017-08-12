@@ -1,0 +1,5 @@
+<map id="app.MiyadaiDataBase.MiyadaiDataBase" name="app.MiyadaiDataBase.MiyadaiDataBase">
+<area shape="rect" id="node3" href="$db/d47/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base_input.html" title="{app.MiyadaiDataBase.Miyadai\lDataBaseInput\n||+ insert_user()\l+ insert_news()\l+ update_images_url()\l}" alt="" coords="5,355,207,468"/>
+<area shape="rect" id="node4" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html" title="{app.MiyadaiDataBase.Miyadai\lDatabaseOutput\n||+ get_users()\l+ fetch_shienka_news_all()\l+ fetch_shienka_news_once()\l}" alt="" coords="231,355,432,468"/>
+<area shape="rect" id="node2" href="$d6/d81/classapp_1_1my_modules_1_1_database_control_1_1_database_control.html" title="{app.myModules.DatabaseControl.\lDatabaseControl\n||+ __init__()\l+ close_connect()\l+ sql_execute()\l+ sql_fetch_one()\l+ sql_fetch_all()\l+ commit()\l}" alt="" coords="107,5,330,159"/>
+</map>

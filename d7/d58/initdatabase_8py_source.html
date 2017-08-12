@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>宮大支援課お知らせBot2: script/initdatabase.py ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">宮大支援課お知らせBot2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_6549bedf82156dc06df95cefb015444e.html">script</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">initdatabase.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d58/initdatabase_8py.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="../../d2/d39/namespaceinitdatabase.html">    1</a></span>&#160;<span class="keyword">import</span> os</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> <a class="code" href="../../d5/da8/namespaceapp_1_1my_modules_1_1_database_control.html">app.myModules.DatabaseControl</a> <span class="keyword">import</span> DatabaseControl</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> <a class="code" href="../../d8/d4d/namespaceapp_1_1_miyadai_scraping.html">app.MiyadaiScraping</a> <span class="keyword">import</span> MiyadaiScraping</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">def </span><a class="code" href="../../d2/d39/namespaceinitdatabase.html#a0922589aa4be4a643d805a49cb9a4d15">insert_shienka_all_news_to_miyadai_shienka</a>():</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    最初にデータベースにデータを入れるスクリプト</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">    注意！fetch_shienka_news()は降順でレコードを返すので、昇順にしてください！</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d2/d39/namespaceinitdatabase.html#a0922589aa4be4a643d805a49cb9a4d15">   11</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    db = <a class="code" href="../../d6/d81/classapp_1_1my_modules_1_1_database_control_1_1_database_control.html">DatabaseControl</a>(os.environ[<span class="stringliteral">&quot;DATABASE_URL&quot;</span>])</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    md = <a class="code" href="../../df/db8/classapp_1_1_miyadai_scraping_1_1_miyadai_scraping.html">MiyadaiScraping</a>()</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    iterate = md.fetch_shienka_news()</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">while</span> <span class="keyword">True</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">try</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            dic = iterate.__next__()</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="comment"># print(dic[&quot;day&quot;], dic[&quot;title&quot;], dic[&quot;url&quot;])</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            sql = <span class="stringliteral">&quot;INSERT INTO miyadai_shienka_news(day, title, url_news) VALUES (&#39;%s&#39;, &#39;%s&#39;, &#39;%s&#39;)&quot;</span>\</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                  % (dic[<span class="stringliteral">&quot;day&quot;</span>], dic[<span class="stringliteral">&quot;title&quot;</span>], dic[<span class="stringliteral">&quot;url_news&quot;</span>])</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            db.sql_execute(sql)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">except</span> StopIteration:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">break</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    print(<span class="stringliteral">&quot;db commit&quot;</span>)</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    db.commit()</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    print(<span class="stringliteral">&quot;db close&quot;</span>)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    db.close_connect()</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment"># db.sql_execute(&quot;INSERT INTO miyadai_shienka (day, title, url) VALUES (%s, %s, %s)&quot;,</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment"># (days[r], menus[r], urls[r]))</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../d2/d39/namespaceinitdatabase.html#a0922589aa4be4a643d805a49cb9a4d15">insert_shienka_all_news_to_miyadai_shienka</a>()</div><div class="ttc" id="namespaceinitdatabase_html_a0922589aa4be4a643d805a49cb9a4d15"><div class="ttname"><a href="../../d2/d39/namespaceinitdatabase.html#a0922589aa4be4a643d805a49cb9a4d15">initdatabase.insert_shienka_all_news_to_miyadai_shienka</a></div><div class="ttdeci">def insert_shienka_all_news_to_miyadai_shienka()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d58/initdatabase_8py_source.html#l00011">initdatabase.py:11</a></div></div>
+<div class="ttc" id="namespaceapp_1_1my_modules_1_1_database_control_html"><div class="ttname"><a href="../../d5/da8/namespaceapp_1_1my_modules_1_1_database_control.html">app.myModules.DatabaseControl</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5e/_database_control_8py_source.html#l00001">DatabaseControl.py:1</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1_database_control_1_1_database_control_html"><div class="ttname"><a href="../../d6/d81/classapp_1_1my_modules_1_1_database_control_1_1_database_control.html">app.myModules.DatabaseControl.DatabaseControl</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5e/_database_control_8py_source.html#l00005">DatabaseControl.py:5</a></div></div>
+<div class="ttc" id="classapp_1_1_miyadai_scraping_1_1_miyadai_scraping_html"><div class="ttname"><a href="../../df/db8/classapp_1_1_miyadai_scraping_1_1_miyadai_scraping.html">app.MiyadaiScraping.MiyadaiScraping</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/_miyadai_scraping_8py_source.html#l00004">MiyadaiScraping.py:4</a></div></div>
+<div class="ttc" id="namespaceapp_1_1_miyadai_scraping_html"><div class="ttname"><a href="../../d8/d4d/namespaceapp_1_1_miyadai_scraping.html">app.MiyadaiScraping</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d46/_miyadai_scraping_8py_source.html#l00001">MiyadaiScraping.py:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
