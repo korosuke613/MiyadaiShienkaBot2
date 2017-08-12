@@ -1,6 +1,4 @@
 import os
-import psycopg2
-import pytest
 
 from app.myModules.DatabaseControl import DatabaseControl
 
