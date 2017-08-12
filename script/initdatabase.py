@@ -18,7 +18,7 @@ def insert_shienka_all_news_to_miyadai_shienka():
             dic = iterate.__next__()
             # print(dic["day"], dic["title"], dic["url"])
             sql = "INSERT INTO miyadai_shienka_news(day, title, url_news) VALUES ('%s', '%s', '%s')"\
-                  % (dic["day"], dic["title"], dic["url"])
+                  % (dic["day"], dic["title"], dic["url_news"])
             db.sql_execute(sql)
         except StopIteration:
             break
