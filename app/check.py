@@ -1,4 +1,4 @@
-from MiyadaiDataBaseOutput import MiyadaiDatabaseOutput
+from MiyadaiDataBase import MiyadaiDatabaseOutput
 from MiyadaiScraping import MiyadaiScraping
 
 
