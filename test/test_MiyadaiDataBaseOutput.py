@@ -1,6 +1,6 @@
 import pytest
 
-from app.MiyadaiDataBaseOutput import MiyadaiDatabaseOutput
+from app.MiyadaiDataBase import MiyadaiDatabaseOutput
 
 
 @pytest.fixture()
