@@ -11,3 +11,6 @@ class Scraping:
         self._url = _url
         html = urllib.request.urlopen(self._url)
         self._soup = BeautifulSoup(html, "html.parser")
+
+if __name__ == "__main__":
+    pass
