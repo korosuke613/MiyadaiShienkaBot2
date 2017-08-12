@@ -5,7 +5,7 @@ class MiyadaiScraping(Scraping):
     def __init__(self):
         super().__init__()
 
-    def shienka_all_news(self):
+    def fetch_shienka_news(self):
         self.set_url("http://gakumu.of.miyazaki-u.ac.jp/gakumu/allnews")
         day = title = url = None
         # class=category-moduleのulタグを指定
@@ -52,7 +52,7 @@ class MiyadaiScraping(Scraping):
 
 if __name__ == "__main__":
     sc = MiyadaiScraping()
-    dic = sc.shienka_all_news()
+    dic = sc.fetch_shienka_news()
     print(dic.__next__())
     # for news in dic:
     #    print(news)
