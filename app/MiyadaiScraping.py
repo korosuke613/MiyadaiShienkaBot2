@@ -31,7 +31,7 @@ class MiyadaiScraping(Scraping):
                 _dic = {
                     "day": day,
                     "title": title,
-                    "url": url,
+                    "url_news": url,
                 }
 
                 # ジェネレータとして返す
