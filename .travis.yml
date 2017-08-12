@@ -8,6 +8,8 @@ python:
 install:
   - "pip install -r requirements.txt"
   - "pip install coveralls codecov"
+before_script:
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)/app
 script:
   - pytest --cov ./app
 after_success:

@@ -1,6 +1,6 @@
 import os
 
-from app.myModules.DatabaseControl import DatabaseControl
+from myModules.DatabaseControl import DatabaseControl
 
 
 class MiyadaiDatabaseOutput(DatabaseControl):
