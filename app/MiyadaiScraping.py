@@ -1,4 +1,5 @@
 from myModules.Scraping import Scraping
+from myModules.ScreenShot import ScreenShot
 
 
 class MiyadaiScraping(Scraping):
@@ -36,6 +37,23 @@ class MiyadaiScraping(Scraping):
 
                 # ジェネレータとして返す
                 yield _dic
+
+    @staticmethod
+    def screenshot_news_crop(screen_url):
+        # クロップする要素の属性を指定
+        element_type = "Id"
+        # クロップする要素名を指定
+        element_name = "wrapper2"
+        # インスタンスを生成するときに保存先ファイル名を指定
+        ss = ScreenShot("screenshot.png")
+        # screen_urlのスクリーンショットを保存
+        ss.screen_shot(screen_url)
+        # 保存先ファイル名を変更
+        ss.set_file_name("screenshot_crop.png")
+        # screen_urlのelement_type属性のelement_nameという要素のスクリーンショットを保存
+        ss.screen_shot_crop(screen_url, element_name, element_type)
+        # インスタンスの削除
+        del ss
 
     def check_pdf(self, screen_url):
         self.set_url(screen_url)
