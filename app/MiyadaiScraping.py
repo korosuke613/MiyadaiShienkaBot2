@@ -47,11 +47,14 @@ class MiyadaiScraping(Scraping):
         # インスタンスを生成するときに保存先ファイル名を指定
         ss = ScreenShot("screenshot.png")
         # screen_urlのスクリーンショットを保存
-        ss.screen_shot(screen_url)
+        if not ss.screen_shot(screen_url):
+            return False
         # 保存先ファイル名を変更
         ss.set_file_name("screenshot_crop.png")
         # screen_urlのelement_type属性のelement_nameという要素のスクリーンショットを保存
-        ss.screen_shot_crop(screen_url, element_name, element_type)
+        if not ss.screen_shot_crop(screen_url, element_name, element_type):
+            return False
+        return True
 
     def check_pdf(self, screen_url):
         self.set_url(screen_url)
