@@ -63,7 +63,10 @@ class MiyadaiScraping(Scraping):
             if a.string is not None:
                 url = a.get('href')
                 if '.pdf' in url:
-                    pdf_url = 'http://gakumu.of.miyazaki-u.ac.jp' + url
+                    if 'http' in url:
+                        pdf_url = url
+                    else:
+                        pdf_url = 'http://gakumu.of.miyazaki-u.ac.jp' + url
                     return pdf_url
         return None
 
