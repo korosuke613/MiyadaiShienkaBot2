@@ -52,8 +52,6 @@ class MiyadaiScraping(Scraping):
         ss.set_file_name("screenshot_crop.png")
         # screen_urlのelement_type属性のelement_nameという要素のスクリーンショットを保存
         ss.screen_shot_crop(screen_url, element_name, element_type)
-        # インスタンスの削除
-        del ss
 
     def check_pdf(self, screen_url):
         self.set_url(screen_url)
@@ -69,11 +67,3 @@ class MiyadaiScraping(Scraping):
                         pdf_url = 'http://gakumu.of.miyazaki-u.ac.jp' + url
                     return pdf_url
         return None
-
-
-if __name__ == "__main__":
-    sc = MiyadaiScraping()
-    dic = sc.fetch_shienka_news()
-    print(dic.__next__())
-    # for news in dic:
-    #    print(news)
