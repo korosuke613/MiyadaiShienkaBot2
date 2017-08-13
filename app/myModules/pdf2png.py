@@ -30,6 +30,6 @@ def download_pdf(pdf_url, file_name):
 
 
 if __name__ == "__main__":
-    # download_pdf(
-    #    "http://gakumu.of.miyazaki-u.ac.jp/gakumu/images/campuslife/scholarship/H29/ooame20170705.pdf", "test.pdf")
+    download_pdf(
+        "http://gakumu.of.miyazaki-u.ac.jp/gakumu/images/campuslife/scholarship/H29/ooame20170705.pdf", "test.pdf")
     convert("./test.pdf")
