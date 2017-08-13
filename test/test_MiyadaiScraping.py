@@ -34,7 +34,13 @@ def test_check_pdf_2():
 def test_screenshot_news_crop1():
     sc = MiyadaiScraping()
     url = "http://gakumu.of.miyazaki-u.ac.jp/gakumu/andsoon/andsoon/3508-2017-08-10-04-08-15.html"
-    assert sc.screenshot_news_crop(url)
+    assert sc.screenshot_news_crop(url) is True
 
     assert os.path.isfile("screenshot.png")
     assert os.path.isfile("screenshot_crop.png")
+
+
+def test_screenshot_news_crop2():
+    sc = MiyadaiScraping()
+    url = sc.check_pdf("http://gakumu.of.miyazaki-u.ac.jp/gakumu/andsoon/andsoon/3508-2017-08-10-04-08-15.html")
+    assert sc.screenshot_news_crop(url) is False
