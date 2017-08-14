@@ -44,6 +44,8 @@ class MiyadaiDatabaseOutput(MiyadaiDataBase):
         self.sql_execute("SELECT * FROM miyadai_shienka_news ORDER BY day DESC;")
         while True:
             record = self.sql_fetch_one()
+            if record is None:
+                yield False
             dic = self.insert_dic_news(record)
             yield dic
 

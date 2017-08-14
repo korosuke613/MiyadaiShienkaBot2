@@ -2,6 +2,9 @@ import os
 
 from app.myModules.DatabaseControl import DatabaseControl
 from app.MiyadaiScraping import MiyadaiScraping
+from app.MiyadaiDataBase import MiyadaiDatabaseOutput, MiyadaiDataBaseInput
+from app.upload import upload_image
+from app.myModules.pdf2png import download_pdf, convert
 
 
 def insert_shienka_all_news_to_miyadai_shienka():
@@ -31,5 +34,53 @@ def insert_shienka_all_news_to_miyadai_shienka():
     # db.sql_execute("INSERT INTO miyadai_shienka (day, title, url) VALUES (%s, %s, %s)",
     # (days[r], menus[r], urls[r]))
 
+
+def update_shienka_all_news_screen_shot_to_miyadai_shienka():
+    db = MiyadaiDatabaseOutput()
+    md = MiyadaiScraping()
+    db_input = MiyadaiDataBaseInput()
+
+    iterate = db.fetch_shienka_news_all()
+    while True:
+        dic = iterate.__next__()
+        if dic is False:
+            break
+        print(dic["url_news"])
+        md.screenshot_news_crop(dic["url_news"])
+        url_screen_shot = upload_image("screenshot_crop.png", tag="miyadai_shienka_news_screen_shot")
+        db_input.sql_execute(
+            "UPDATE miyadai_shienka_news SET url_screen_shot='%s' WHERE url_news='%s'"
+            % (url_screen_shot, dic["url_news"],))
+
+    db_input.commit()
+    db_input.close_connect()
+    db.close_connect()
+
+
+def update_shienka_all_news_pdf_shot_to_miyadai_shienka():
+    db = MiyadaiDatabaseOutput()
+    md = MiyadaiScraping()
+    db_input = MiyadaiDataBaseInput()
+
+    iterate = db.fetch_shienka_news_all()
+    while True:
+        dic = iterate.__next__()
+        if dic is False:
+            break
+        url_pdf = md.check_pdf(dic["url_news"])
+        if url_pdf is None:
+            continue
+        print(url_pdf)
+        download_pdf(url_pdf, "news.pdf")
+        convert("news.pdf")
+
+        url_pdf_shot = upload_image("news.png", tag="miyadai_shienka_news_pds_shot")
+        db_input.sql_execute(
+            "UPDATE miyadai_shienka_news SET url_pdf_shot='%s' WHERE url_news='%s'"
+            % (url_pdf_shot, dic["url_news"],))
+    db_input.commit()
+    db_input.close_connect()
+    db.close_connect()
+
 if __name__ == "__main__":
-    insert_shienka_all_news_to_miyadai_shienka()
+    update_shienka_all_news_pdf_shot_to_miyadai_shienka()
