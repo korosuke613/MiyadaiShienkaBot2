@@ -27,7 +27,7 @@ def test_check_pdf_1():
 
 def test_check_pdf_2():
     sc = MiyadaiScraping()
-    url = sc.check_pdf("http://gakumu.of.miyazaki-u.ac.jp/gakumu/andsoon/andsoon/3495-2017-07-25-05-33-46.html")
+    url = sc.check_pdf("http://gakumu.of.miyazaki-u.ac.jp/gakumu/andsoon/andsoon/3305-wakabanitsuite.html")
 
     assert url is None
 
