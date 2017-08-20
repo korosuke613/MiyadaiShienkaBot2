@@ -1,6 +1,7 @@
 <map id="app.myModules.DatabaseControl.DatabaseControl.sql_execute" name="app.myModules.DatabaseControl.DatabaseControl.sql_execute">
-<area shape="rect" id="node2" href="$db/d47/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base_input.html#a0384ed527d4bf58c7c5e4a6d92fa1538" title="app.MiyadaiDataBase.Miyadai\lDataBaseInput.update_images_url" alt="" coords="276,5,503,44"/>
-<area shape="rect" id="node3" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a8dc9f4033648205ca59c0bd41ee31afa" title="app.MiyadaiDataBase.Miyadai\lDatabaseOutput.get_users" alt="" coords="289,68,490,107"/>
-<area shape="rect" id="node4" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a229af6ae92bc90ca66912093123fb724" title="app.MiyadaiDataBase.Miyadai\lDatabaseOutput.fetch_shienka\l_news_all" alt="" coords="287,131,492,183"/>
-<area shape="rect" id="node5" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#ad12135b80275f4fd9927efb43f29a732" title="app.MiyadaiDataBase.Miyadai\lDatabaseOutput.fetch_shienka\l_news_once" alt="" coords="287,207,492,259"/>
+<area shape="rect" id="node2" href="$db/d47/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base_input.html#a06ad85f1e78ebeec26fad26024f8481f" title="データベースに記事を登録する " alt="" coords="289,5,490,44"/>
+<area shape="rect" id="node3" href="$db/d47/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base_input.html#a2dd51da3c58c11227e551e6e98ff92a4" title="データベースに記事の各画像を登録する " alt="" coords="276,68,503,107"/>
+<area shape="rect" id="node4" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a8dc9f4033648205ca59c0bd41ee31afa" title="ユーザを取得する " alt="" coords="289,131,490,169"/>
+<area shape="rect" id="node5" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a229af6ae92bc90ca66912093123fb724" title="記事の情報を一つずつ取得する " alt="" coords="287,193,492,245"/>
+<area shape="rect" id="node6" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a190a3b59124641a3917995af0e16ef44" title="指定したurlの記事の情報を取得する " alt="" coords="287,269,492,321"/>
 </map>

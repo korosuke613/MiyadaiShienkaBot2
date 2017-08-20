@@ -1,4 +1,4 @@
 <map id="app.myModules.DatabaseControl.DatabaseControl.sql_fetch_one" name="app.myModules.DatabaseControl.DatabaseControl.sql_fetch_one">
-<area shape="rect" id="node2" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a229af6ae92bc90ca66912093123fb724" title="app.MiyadaiDataBase.Miyadai\lDatabaseOutput.fetch_shienka\l_news_all" alt="" coords="276,5,481,57"/>
-<area shape="rect" id="node3" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#ad12135b80275f4fd9927efb43f29a732" title="app.MiyadaiDataBase.Miyadai\lDatabaseOutput.fetch_shienka\l_news_once" alt="" coords="276,81,481,133"/>
+<area shape="rect" id="node2" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a229af6ae92bc90ca66912093123fb724" title="記事の情報を一つずつ取得する " alt="" coords="276,5,481,57"/>
+<area shape="rect" id="node3" href="$d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a190a3b59124641a3917995af0e16ef44" title="指定したurlの記事の情報を取得する " alt="" coords="276,81,481,133"/>
 </map>
