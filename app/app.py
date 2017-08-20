@@ -13,6 +13,7 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
     UnfollowEvent, FollowEvent, JoinEvent, LeaveEvent
 )
+from reply import Reply
 
 app = Flask(__name__)
 
@@ -41,10 +42,16 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_text_message(event):
-    text = event.message.text  # message from user
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=text))  # reply the same message from user
+    reply_message = Reply.controller(event.message.text)  # message from user
+
+    if reply_message["type"] == Reply.TYPE_TEXT:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=reply_message["message"]))  # reply the same message from user
+    elif reply_message["type"] == Reply.TYPE_CAROUSEL:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=reply_message["message"]))
 
 
 @handler.add(FollowEvent)
