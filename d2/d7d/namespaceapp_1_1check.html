@@ -73,8 +73,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 関数</h2></td></tr>
 <tr class="memitem:a6d041a438a02dc49b5085c3c6d0a0a44"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7d/namespaceapp_1_1check.html#a6d041a438a02dc49b5085c3c6d0a0a44">check_new_miyadai_shienka_news</a> (db)</td></tr>
+<tr class="memdesc:a6d041a438a02dc49b5085c3c6d0a0a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の宮大支援課のお知らせをスクレイピングし、データベースに登録されてない記事があるかどうかをチェックする。  <a href="#a6d041a438a02dc49b5085c3c6d0a0a44">[詳解]</a><br /></td></tr>
 <tr class="separator:a6d041a438a02dc49b5085c3c6d0a0a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af56bd8840ea57527a1c2f8596522653a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7d/namespaceapp_1_1check.html#af56bd8840ea57527a1c2f8596522653a">get_new_miyadai_shienka_news</a> (db)</td></tr>
+<tr class="memdesc:af56bd8840ea57527a1c2f8596522653a"><td class="mdescLeft">&#160;</td><td class="mdescRight">宮大支援課のお知らせの新しい記事の情報を取得する  <a href="#af56bd8840ea57527a1c2f8596522653a">[詳解]</a><br /></td></tr>
 <tr class="separator:af56bd8840ea57527a1c2f8596522653a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -99,13 +101,22 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00005">5</a> 行目に定義があります。</p>
+<p>現在の宮大支援課のお知らせをスクレイピングし、データベースに登録されてない記事があるかどうかをチェックする。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>ジェネレータ。新しい記事の場合はその記事の情報を辞書型で返す。既にある記事の場合はその記事のURLを返す。 </dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">db</td><td>MiyadaiDataBaseOutputクラスのインスタンス。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00009">9</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph.png" border="0" usemap="#d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph" alt=""/></div>
 <map name="d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph" id="d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph">
-<area shape="rect" id="node2" href="../../d2/d7d/namespaceapp_1_1check.html#af56bd8840ea57527a1c2f8596522653a" title="app.check.get_new_miyadai\l_shienka_news" alt="" coords="220,5,410,44"/>
+<area shape="rect" id="node2" href="../../d2/d7d/namespaceapp_1_1check.html#af56bd8840ea57527a1c2f8596522653a" title="宮大支援課のお知らせの新しい記事の情報を取得する " alt="" coords="220,5,410,44"/>
 </map>
 </div>
 
@@ -127,13 +138,22 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00019">19</a> 行目に定義があります。</p>
+<p>宮大支援課のお知らせの新しい記事の情報を取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">db</td><td>MiyadaiDataBaseOutputクラスのインスタンス。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>: 新しい記事の情報の辞書のタプル。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00027">27</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph.png" border="0" usemap="#d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph" alt=""/></div>
 <map name="d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph" id="d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph">
-<area shape="rect" id="node2" href="../../d2/d7d/namespaceapp_1_1check.html#a6d041a438a02dc49b5085c3c6d0a0a44" title="app.check.check_new\l_miyadai_shienka_news" alt="" coords="243,5,410,44"/>
+<area shape="rect" id="node2" href="../../d2/d7d/namespaceapp_1_1check.html#a6d041a438a02dc49b5085c3c6d0a0a44" title="現在の宮大支援課のお知らせをスクレイピングし、データベースに登録されてない記事があるかどうかをチェッ�..." alt="" coords="243,5,410,44"/>
 </map>
 </div>
 
@@ -152,7 +172,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00031">31</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00039">39</a> 行目に定義があります。</p>
 
 </div>
 </div>

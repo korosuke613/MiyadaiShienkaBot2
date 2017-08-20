@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['insert_5fdic_5fnews',['insert_dic_news',['../d4/d7e/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base.html#a3f0dbc41d215c69a1370a26b58f99c54',1,'app::MiyadaiDataBase::MiyadaiDataBase']]],
-  ['insert_5fnews',['insert_news',['../db/d47/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base_input.html#a499abdfd94a91f3f54647b4539ea6199',1,'app::MiyadaiDataBase::MiyadaiDataBaseInput']]],
-  ['insert_5fshienka_5fall_5fnews_5fto_5fmiyadai_5fshienka',['insert_shienka_all_news_to_miyadai_shienka',['../d2/d39/namespaceinitdatabase.html#a0922589aa4be4a643d805a49cb9a4d15',1,'initdatabase']]],
-  ['insert_5fuser',['insert_user',['../db/d47/classapp_1_1_miyadai_data_base_1_1_miyadai_data_base_input.html#a8f87a4a23d16c00416e6e73381ae99b9',1,'app::MiyadaiDataBase::MiyadaiDataBaseInput']]]
+  ['handle_5ffollow',['handle_follow',['../d4/dcb/namespaceapp_1_1app.html#a11956680931f3b9c93d248ea82763442',1,'app::app']]],
+  ['handle_5fjoin',['handle_join',['../d4/dcb/namespaceapp_1_1app.html#a4ce23009972a9f721e6ad4cd9951fb32',1,'app::app']]],
+  ['handle_5fleave',['handle_leave',['../d4/dcb/namespaceapp_1_1app.html#a4b9bd2226d9e2cf642cf8e783c97e54c',1,'app::app']]],
+  ['handle_5ftext_5fmessage',['handle_text_message',['../d4/dcb/namespaceapp_1_1app.html#aa8e3f052752cfd349b79729cb6b4e940',1,'app::app']]],
+  ['handle_5funfollow',['handle_unfollow',['../d4/dcb/namespaceapp_1_1app.html#a0f86e7890963a0954a21ca4ea6f70071',1,'app::app']]]
 ];

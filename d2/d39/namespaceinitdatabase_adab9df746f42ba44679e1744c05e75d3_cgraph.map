@@ -1,0 +1,6 @@
+<map id="initdatabase.update_shienka_all_news_pdf_shot_to_miyadai_shienka" name="initdatabase.update_shienka_all_news_pdf_shot_to_miyadai_shienka">
+<area shape="rect" id="node2" href="$d5/df1/namespaceapp_1_1my_modules_1_1pdf2png.html#ae59b58d5483ce62b3fdf3babffac9014" title="app.myModules.pdf2png.download_pdf" alt="" coords="233,5,487,31"/>
+<area shape="rect" id="node3" href="$d5/df1/namespaceapp_1_1my_modules_1_1pdf2png.html#a6213bf0c72a4aa6afdf775ae40ef761d" title="Convert a PDF to JPG " alt="" coords="535,31,749,56"/>
+<area shape="rect" id="node4" href="$d4/de6/namespaceapp_1_1upload.html#af2cfa51e12eb6212931ef873175d0c1f" title="app.upload.upload_image" alt="" coords="272,107,447,132"/>
+<area shape="rect" id="node5" href="$d4/de6/namespaceapp_1_1upload.html#a0c43aecced62d1080c5667095ac9960e" title="app.upload.init_upload" alt="" coords="564,107,720,132"/>
+</map>

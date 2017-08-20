@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dic',['dic',['../d8/d4d/namespaceapp_1_1_miyadai_scraping.html#ad9db965c0536350217aa6800e21a4c13',1,'app::MiyadaiScraping']]]
+  ['app',['app',['../d4/dcb/namespaceapp_1_1app.html#a6411d76077449e2bb7ff8451fbf7f14a',1,'app::app']]]
 ];
