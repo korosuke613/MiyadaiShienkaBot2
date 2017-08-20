@@ -62,10 +62,120 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
   <div class="headertitle">
 <div class="title">app.check 名前空間</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a6d041a438a02dc49b5085c3c6d0a0a44"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7d/namespaceapp_1_1check.html#a6d041a438a02dc49b5085c3c6d0a0a44">check_new_miyadai_shienka_news</a> (db)</td></tr>
+<tr class="memdesc:a6d041a438a02dc49b5085c3c6d0a0a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の宮大支援課のお知らせをスクレイピングし、データベースに登録されてない記事があるかどうかをチェックする。  <a href="#a6d041a438a02dc49b5085c3c6d0a0a44">[詳解]</a><br /></td></tr>
+<tr class="separator:a6d041a438a02dc49b5085c3c6d0a0a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56bd8840ea57527a1c2f8596522653a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7d/namespaceapp_1_1check.html#af56bd8840ea57527a1c2f8596522653a">get_new_miyadai_shienka_news</a> (db)</td></tr>
+<tr class="memdesc:af56bd8840ea57527a1c2f8596522653a"><td class="mdescLeft">&#160;</td><td class="mdescRight">宮大支援課のお知らせの新しい記事の情報を取得する  <a href="#af56bd8840ea57527a1c2f8596522653a">[詳解]</a><br /></td></tr>
+<tr class="separator:af56bd8840ea57527a1c2f8596522653a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:ab5c843c60ca89ab13d4a1c701a7ac781"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7d/namespaceapp_1_1check.html#ab5c843c60ca89ab13d4a1c701a7ac781">myzk</a> = <a class="el" href="../../d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html">MiyadaiDatabaseOutput</a>()</td></tr>
+<tr class="separator:ab5c843c60ca89ab13d4a1c701a7ac781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a6d041a438a02dc49b5085c3c6d0a0a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d041a438a02dc49b5085c3c6d0a0a44">&#9670;&nbsp;</a></span>check_new_miyadai_shienka_news()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def app.check.check_new_miyadai_shienka_news </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の宮大支援課のお知らせをスクレイピングし、データベースに登録されてない記事があるかどうかをチェックする。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>ジェネレータ。新しい記事の場合はその記事の情報を辞書型で返す。既にある記事の場合はその記事のURLを返す。 </dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">db</td><td>MiyadaiDataBaseOutputクラスのインスタンス。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00009">9</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph.png" border="0" usemap="#d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph" alt=""/></div>
+<map name="d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph" id="d2/d7d/namespaceapp_1_1check_a6d041a438a02dc49b5085c3c6d0a0a44_icgraph">
+<area shape="rect" id="node2" href="../../d2/d7d/namespaceapp_1_1check.html#af56bd8840ea57527a1c2f8596522653a" title="宮大支援課のお知らせの新しい記事の情報を取得する " alt="" coords="220,5,410,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af56bd8840ea57527a1c2f8596522653a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56bd8840ea57527a1c2f8596522653a">&#9670;&nbsp;</a></span>get_new_miyadai_shienka_news()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def app.check.get_new_miyadai_shienka_news </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>db</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>宮大支援課のお知らせの新しい記事の情報を取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">db</td><td>MiyadaiDataBaseOutputクラスのインスタンス。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>: 新しい記事の情報の辞書のタプル。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00027">27</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph.png" border="0" usemap="#d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph" alt=""/></div>
+<map name="d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph" id="d2/d7d/namespaceapp_1_1check_af56bd8840ea57527a1c2f8596522653a_cgraph">
+<area shape="rect" id="node2" href="../../d2/d7d/namespaceapp_1_1check.html#a6d041a438a02dc49b5085c3c6d0a0a44" title="現在の宮大支援課のお知らせをスクレイピングし、データベースに登録されてない記事があるかどうかをチェッ�..." alt="" coords="243,5,410,44"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a id="ab5c843c60ca89ab13d4a1c701a7ac781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c843c60ca89ab13d4a1c701a7ac781">&#9670;&nbsp;</a></span>myzk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">app.check.myzk = <a class="el" href="../../d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html">MiyadaiDatabaseOutput</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dc/de5/check_8py_source.html">check.py</a> の <a class="el" href="../../dc/de5/check_8py_source.html#l00039">39</a> 行目に定義があります。</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['miyadaishienkabot2',['MiyadaiShienkaBot2',['../d3/dcc/md__r_e_a_d_m_e.html',1,'']]],
-  ['miyadaidatabase_2epy',['MiyadaiDataBase.py',['../df/d91/_miyadai_data_base_8py.html',1,'']]],
-  ['miyadaiscraping_2epy',['MiyadaiScraping.py',['../dc/d46/_miyadai_scraping_8py.html',1,'']]]
+  ['fetch_5fshienka_5fnews',['fetch_shienka_news',['../df/db8/classapp_1_1_miyadai_scraping_1_1_miyadai_scraping.html#af3ddb7af9b7765eb9ad7ca9dece69734',1,'app::MiyadaiScraping::MiyadaiScraping']]],
+  ['fetch_5fshienka_5fnews_5fall',['fetch_shienka_news_all',['../d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a9a399d04e86ff5839fa75b602af43931',1,'app::MiyadaiDataBase::MiyadaiDatabaseOutput']]],
+  ['fetch_5fshienka_5fnews_5fonce',['fetch_shienka_news_once',['../d0/da4/classapp_1_1_miyadai_data_base_1_1_miyadai_database_output.html#a190a3b59124641a3917995af0e16ef44',1,'app::MiyadaiDataBase::MiyadaiDatabaseOutput']]]
 ];

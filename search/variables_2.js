@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['handler',['handler',['../d4/dcb/namespaceapp_1_1app.html#a231002c857957e0d64dc39fc4c54042b',1,'app::app']]],
-  ['host',['host',['../d4/dcb/namespaceapp_1_1app.html#a0fd9a265be95cf28ca544314bcbd5927',1,'app::app']]]
+  ['db_5fout',['db_out',['../db/d0d/classapp_1_1reply_1_1_reply.html#a4c537cbf7f840e34897b2445b9adaa44',1,'app::reply::Reply']]]
 ];

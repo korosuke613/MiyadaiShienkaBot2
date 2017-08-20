@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['app',['app',['../d8/d01/namespaceapp.html',1,'app'],['../d4/dcb/namespaceapp_1_1app.html',1,'app.app']]],
+  ['app',['app',['../d8/d01/namespaceapp.html',1,'app'],['../d4/dcb/namespaceapp_1_1app.html',1,'app.app'],['../d4/dcb/namespaceapp_1_1app.html#a6411d76077449e2bb7ff8451fbf7f14a',1,'app.app.app()']]],
   ['app_2epy',['app.py',['../de/d0e/app_8py.html',1,'']]],
   ['check',['check',['../d2/d7d/namespaceapp_1_1check.html',1,'app']]],
   ['databasecontrol',['DatabaseControl',['../d5/da8/namespaceapp_1_1my_modules_1_1_database_control.html',1,'app::myModules']]],
