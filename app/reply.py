@@ -1,3 +1,5 @@
+import re
+
 from MiyadaiDataBase import MiyadaiDatabaseOutput
 from linebot.models.template import CarouselColumn, MessageTemplateAction, URITemplateAction, TemplateSendMessage, \
     CarouselTemplate
@@ -84,7 +86,7 @@ class Reply:
         elif cls.MSG_MIYADAI == event_message:
             return cls.msg_miyadai()
         elif cls.MSG_MIYADAI_OLD in event_message:
-            return cls.msg_miyadai_old()
+            return cls.msg_miyadai_old(event_message)
         else:
             return cls.msg_other()
 
@@ -103,9 +105,17 @@ class Reply:
         return dic
 
     @classmethod
-    def msg_miyadai_old(cls):
+    def msg_miyadai_old(cls, event_message):
+        # 正規表現
+        pattern = r'([+-]?[0-9]+\.?[0-9]*)'
+        if re.search(pattern, event_message):
+            print_num = int(re.search(pattern, event_message).group(1))
+            if 0 < print_num <= 100:
+                offset = print_num
+            else:
+                offset = 0
         dic = {"type": cls.TYPE_CAROUSEL,
-               "message": cls.create_carousel(0),
+               "message": cls.create_carousel(offset),
                "log": "test 過去宮大"}
         return dic
 
