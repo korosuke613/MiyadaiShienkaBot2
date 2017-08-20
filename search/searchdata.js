@@ -1,33 +1,24 @@
 var indexSectionsWithContent =
 {
-  0: "_acdefghilmprsu",
-  1: "dms",
-  2: "ai",
-  3: "_acdimprsu",
-  4: "_cdfghisu",
-  5: "aehlmps",
-  6: "m"
+  0: "_acdimprsu",
+  1: "ai",
+  2: "_acdimprsu",
+  3: "m"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes",
-  2: "namespaces",
-  3: "files",
-  4: "functions",
-  5: "variables",
-  6: "pages"
+  1: "namespaces",
+  2: "files",
+  3: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "全て",
-  1: "クラス",
-  2: "名前空間",
-  3: "ファイル",
-  4: "関数",
-  5: "変数",
-  6: "ページ"
+  1: "名前空間",
+  2: "ファイル",
+  3: "ページ"
 };
 
