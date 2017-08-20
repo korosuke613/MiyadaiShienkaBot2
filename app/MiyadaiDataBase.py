@@ -60,11 +60,14 @@ class MiyadaiDatabaseOutput(MiyadaiDataBase):
         rows = self.sql_fetch_all()
         return rows
 
-    def fetch_shienka_news_all(self):
+    def fetch_shienka_news_all(self, offset: int=0):
         """記事の情報を一つずつ取得する
         @return ジェネレータで記事の情報を辞書で返す
         """
-        self.sql_execute("SELECT * FROM miyadai_shienka_news ORDER BY day DESC;")
+        if offset == 0:
+            self.sql_execute("SELECT * FROM miyadai_shienka_news ORDER BY day DESC;")
+        else:
+            self.sql_execute("SELECT * FROM miyadai_shienka_news ORDER BY day DESC LIMIT 10 OFFSET %s" % (offset,))
         while True:
             record = self.sql_fetch_one()
             if record is None:
