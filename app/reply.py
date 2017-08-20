@@ -106,6 +106,7 @@ class Reply:
 
     @classmethod
     def msg_miyadai_old(cls, event_message):
+        offset = 0
         # 正規表現
         pattern = r'([+-]?[0-9]+\.?[0-9]*)'
         if re.search(pattern, event_message):
