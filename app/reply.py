@@ -23,9 +23,3 @@ class Reply:
             dic = {"type": cls.TYPE_TEXT,
                    "message": "test その他"}
         return dic
-
-if __name__ == "__main__":
-    print(Reply.controller("宮大"))
-    print(Reply.controller("過去宮大"))
-    print(Reply.controller("ヘルプ"))
-    print(Reply.controller("そのたのなにか"))
