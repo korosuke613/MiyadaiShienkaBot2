@@ -42,16 +42,18 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_text_message(event):
-    reply_message = Reply.controller(event.message.text)  # message from user
+    recv_message = Reply.controller(event.message.text)  # message from user
+    reply_message = TextSendMessage(text="不明なエラー")
 
-    if reply_message["type"] == Reply.TYPE_TEXT:
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text=reply_message["message"]))  # reply the same message from user
-    elif reply_message["type"] == Reply.TYPE_CAROUSEL:
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text=reply_message["message"]))
+    if recv_message["type"] == Reply.TYPE_TEXT:
+        reply_message = TextSendMessage(text=recv_message["message"])
+    elif recv_message["type"] == Reply.TYPE_CAROUSEL:
+        reply_message = recv_message["message"]
+
+    line_bot_api.reply_message(
+        event.reply_token,
+        reply_message
+        )
 
 
 @handler.add(FollowEvent)
