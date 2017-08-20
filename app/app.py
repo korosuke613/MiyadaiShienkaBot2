@@ -45,13 +45,10 @@ def handle_text_message(event):
     recv_message = Reply.controller(event.message.text)  # message from user
     reply_message = TextSendMessage(text="不明なエラー")
 
-    print(reply_message)
-
     if recv_message["type"] == Reply.TYPE_TEXT:
         reply_message = TextSendMessage(text=recv_message["message"])
     elif recv_message["type"] == Reply.TYPE_CAROUSEL:
         reply_message = recv_message["message"]
-    print(reply_message)
 
     line_bot_api.reply_message(
         event.reply_token,
