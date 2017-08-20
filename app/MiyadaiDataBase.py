@@ -53,5 +53,8 @@ class MiyadaiDatabaseOutput(MiyadaiDataBase):
         sql = "SELECT * FROM miyadai_shienka_news WHERE url_news = '%s'" % (url,)
         if self.sql_execute(sql):
             record = self.sql_fetch_one()
-            return self.insert_dic_news(record)
+            if isinstance(record, tuple):
+                return self.insert_dic_news(record)
+            else:
+                return False
         return False
