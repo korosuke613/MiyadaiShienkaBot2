@@ -117,4 +117,5 @@ class Reply:
         return dic
 
 if __name__ == "__main__":
-    print(Reply.controller("宮大"))
+    cl = Reply.controller("宮大")
+    print(cl["message"])
