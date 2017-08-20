@@ -16,7 +16,7 @@ def init_upload():
 
 def upload_image(filename, tag):
     dic = upload(filename, tags=tag)
-    return dic['url']
+    return dic['secure_url']
 
 
 init_upload()
