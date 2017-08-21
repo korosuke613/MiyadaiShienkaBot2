@@ -1,5 +1,5 @@
-from MiyadaiDataBase import MiyadaiDatabaseOutput
-from MiyadaiScraping import MiyadaiScraping
+from miyadai_db import MiyadaiDatabaseOutput
+from miyadai_sc import MiyadaiScraping
 
 
 def check_new_miyadai_shienka_news(db):

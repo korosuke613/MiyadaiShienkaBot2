@@ -1,8 +1,8 @@
 import os
 
-from app.myModules.DatabaseControl import DatabaseControl
-from app.MiyadaiScraping import MiyadaiScraping
-from app.MiyadaiDataBase import MiyadaiDatabaseOutput, MiyadaiDataBaseInput
+from app.myModules.dbcontrol import DatabaseControl
+from app.miyadai_sc import MiyadaiScraping
+from app.miyadai_db import MiyadaiDatabaseOutput, MiyadaiDataBaseInput
 from app.upload import upload_image
 from app.myModules.pdf2png import download_pdf, convert
 

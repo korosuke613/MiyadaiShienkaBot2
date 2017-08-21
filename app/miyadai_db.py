@@ -1,6 +1,6 @@
 import os
 
-from myModules.DatabaseControl import DatabaseControl
+from myModules.dbcontrol import DatabaseControl
 
 
 class MiyadaiDataBase(DatabaseControl):

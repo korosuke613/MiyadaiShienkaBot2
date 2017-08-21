@@ -1,6 +1,6 @@
 import re
 
-from MiyadaiDataBase import MiyadaiDatabaseOutput
+from miyadai_db import MiyadaiDatabaseOutput
 from linebot.models.template import CarouselColumn, MessageTemplateAction, URITemplateAction, TemplateSendMessage, \
     CarouselTemplate
 
