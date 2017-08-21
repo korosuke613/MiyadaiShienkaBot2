@@ -1,5 +1,5 @@
-from MiyadaiDataBase import MiyadaiDatabaseOutput
-from MiyadaiScraping import MiyadaiScraping
+from miyadai_db import MiyadaiDatabaseOutput
+from miyadai_sc import MiyadaiScraping
 
 
 def check_new_miyadai_shienka_news(db):
@@ -33,9 +33,3 @@ def get_new_miyadai_shienka_news(db):
         return False
 
     return new_newses
-
-
-if __name__ == "__main__":
-    myzk = MiyadaiDatabaseOutput()
-    print(get_new_miyadai_shienka_news(myzk))
-    myzk.close_connect()

@@ -1,5 +1,5 @@
-from myModules.Scraping import Scraping
-from myModules.ScreenShot import ScreenShot
+from myModules.scraping import Scraping
+from myModules.screenshot import ScreenShot
 
 
 class MiyadaiScraping(Scraping):

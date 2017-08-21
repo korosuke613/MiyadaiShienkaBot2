@@ -1,6 +1,6 @@
 import os
 
-from app.myModules.DatabaseControl import DatabaseControl
+from app.myModules.dbcontrol import DatabaseControl
 
 
 def test_open_db_1():

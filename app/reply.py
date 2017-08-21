@@ -1,6 +1,6 @@
 import re
 
-from MiyadaiDataBase import MiyadaiDatabaseOutput
+from miyadai_db import MiyadaiDatabaseOutput
 from linebot.models.template import CarouselColumn, MessageTemplateAction, URITemplateAction, TemplateSendMessage, \
     CarouselTemplate
 
@@ -126,7 +126,3 @@ class Reply:
                "message": "test その他",
                "log": "test その他"}
         return dic
-
-if __name__ == "__main__":
-    cl = Reply.controller("宮大")
-    print(cl["message"])

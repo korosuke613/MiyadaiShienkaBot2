@@ -1,6 +1,6 @@
 import pytest
 
-from app.MiyadaiDataBase import MiyadaiDataBaseInput
+from app.miyadai_db import MiyadaiDataBaseInput
 
 
 _record = ["100000000",

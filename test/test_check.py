@@ -1,6 +1,6 @@
 import pytest
 
-from app.MiyadaiDataBase import MiyadaiDatabaseOutput
+from app.miyadai_db import MiyadaiDatabaseOutput
 from app.check import get_new_miyadai_shienka_news
 
 NUM = 5

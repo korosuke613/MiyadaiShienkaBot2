@@ -1,5 +1,5 @@
 import pytest
-from app.MiyadaiScraping import MiyadaiScraping
+from app.miyadai_sc import MiyadaiScraping
 import os.path
 
 
