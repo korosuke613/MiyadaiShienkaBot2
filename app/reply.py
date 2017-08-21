@@ -126,7 +126,3 @@ class Reply:
                "message": "test その他",
                "log": "test その他"}
         return dic
-
-if __name__ == "__main__":
-    cl = Reply.controller("宮大")
-    print(cl["message"])

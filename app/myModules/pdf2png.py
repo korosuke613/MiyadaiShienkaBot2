@@ -23,13 +23,8 @@ def convert(pdf):
 def download_pdf(pdf_url, file_name):
     r = requests.get(pdf_url)
     # ファイルの保存
+    # TODO withにする
     if r.status_code == 200:
         f = open(file_name, 'wb')
         f.write(r.content)
         f.close()
-
-
-if __name__ == "__main__":
-    download_pdf(
-        "http://gakumu.of.miyazaki-u.ac.jp/gakumu/images/campuslife/scholarship/H29/ooame20170705.pdf", "test.pdf")
-    convert("./test.pdf")

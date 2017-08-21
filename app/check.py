@@ -33,9 +33,3 @@ def get_new_miyadai_shienka_news(db):
         return False
 
     return new_newses
-
-
-if __name__ == "__main__":
-    myzk = MiyadaiDatabaseOutput()
-    print(get_new_miyadai_shienka_news(myzk))
-    myzk.close_connect()
