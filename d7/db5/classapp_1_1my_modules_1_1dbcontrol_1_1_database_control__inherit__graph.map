@@ -1,0 +1,5 @@
+<map id="app.myModules.dbcontrol.DatabaseControl" name="app.myModules.dbcontrol.DatabaseControl">
+<area shape="rect" id="node2" href="$dc/dba/classapp_1_1miyadai__db_1_1_miyadai_data_base.html" title="{app.miyadai_db.MiyadaiDataBase\n||+ __init__()\l+ insert_dic_news()\l}" alt="" coords="106,207,330,293"/>
+<area shape="rect" id="node3" href="$dc/d52/classapp_1_1miyadai__db_1_1_miyadai_data_base_input.html" title="{app.miyadai_db.MiyadaiData\lBaseInput\n||+ insert_user()\l+ insert_news()\l+ update_images_url()\l}" alt="" coords="5,341,199,455"/>
+<area shape="rect" id="node4" href="$d1/dd8/classapp_1_1miyadai__db_1_1_miyadai_database_output.html" title="{app.miyadai_db.MiyadaiDatabase\lOutput\n||+ get_users()\l+ fetch_shienka_news_all()\l+ fetch_shienka_news_once()\l}" alt="" coords="223,341,445,455"/>
+</map>

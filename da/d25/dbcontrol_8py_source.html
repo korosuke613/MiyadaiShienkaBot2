@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>宮大支援課お知らせBot2: app/myModules/dbcontrol.py ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">宮大支援課お知らせBot2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d422163b96683743ed3963d4aac17747.html">app</a></li><li class="navelem"><a class="el" href="../../dir_c0f2c7d49cc6ee8b1fe4bb63a70ff899.html">myModules</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">dbcontrol.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d25/dbcontrol_8py.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="../../dc/d5a/namespaceapp_1_1my_modules_1_1dbcontrol.html">    1</a></span>&#160;<span class="keyword">import</span> urllib.request</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> psycopg2</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html">DatabaseControl</a>:</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#aa8759acb2970330dc4e2db44938b8116">    6</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#aa8759acb2970330dc4e2db44938b8116">__init__</a>(self, db_url_):</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a977b0a1f06c7eb90b15dfbc4f99e7d1f">__database_url</a> = urllib.parse.urlparse(db_url_)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a1e5cc1f312103c3ce87821abcf6ecada">__conn</a> = psycopg2.connect(</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            database=self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a977b0a1f06c7eb90b15dfbc4f99e7d1f">__database_url</a>.path[1:],</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            user=self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a977b0a1f06c7eb90b15dfbc4f99e7d1f">__database_url</a>.username,</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            password=self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a977b0a1f06c7eb90b15dfbc4f99e7d1f">__database_url</a>.password,</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            host=self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a977b0a1f06c7eb90b15dfbc4f99e7d1f">__database_url</a>.hostname,</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            port=self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a977b0a1f06c7eb90b15dfbc4f99e7d1f">__database_url</a>.port</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        )</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a25987d408151bc87ee39480b5688f90d">__cur</a> = self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a1e5cc1f312103c3ce87821abcf6ecada">__conn</a>.cursor()</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#af6f66458a8146e2f015f480635270aad">   17</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#af6f66458a8146e2f015f480635270aad">close_connect</a>(self):</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a25987d408151bc87ee39480b5688f90d">__cur</a>.close()</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a1e5cc1f312103c3ce87821abcf6ecada">__conn</a>.close()</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">True</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a30cb2769a65031268fa24ed8631e0657">   22</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a30cb2769a65031268fa24ed8631e0657">sql_execute</a>(self, sql):</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">try</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a25987d408151bc87ee39480b5688f90d">__cur</a>.execute(sql)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">except</span> psycopg2.Error:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">False</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">else</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">True</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a4df157d65ecae9a7c1c52ae2a42a4aa1">   30</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a4df157d65ecae9a7c1c52ae2a42a4aa1">sql_fetch_one</a>(self):</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment"># TODO 例外を作る</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a25987d408151bc87ee39480b5688f90d">__cur</a>.fetchone()</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a9c635cd860e54331d646dbebeccfd5f3">   34</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a9c635cd860e54331d646dbebeccfd5f3">sql_fetch_all</a>(self):</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment"># TODO 例外を作る</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a25987d408151bc87ee39480b5688f90d">__cur</a>.fetchall()</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a08c3aadcf3019be6076635fca2d9e195">   38</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a08c3aadcf3019be6076635fca2d9e195">commit</a>(self):</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        self.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a1e5cc1f312103c3ce87821abcf6ecada">__conn</a>.<a class="code" href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a08c3aadcf3019be6076635fca2d9e195">commit</a>()</div><div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_a977b0a1f06c7eb90b15dfbc4f99e7d1f"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a977b0a1f06c7eb90b15dfbc4f99e7d1f">app.myModules.dbcontrol.DatabaseControl.__database_url</a></div><div class="ttdeci">__database_url</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00007">dbcontrol.py:7</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_a4df157d65ecae9a7c1c52ae2a42a4aa1"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a4df157d65ecae9a7c1c52ae2a42a4aa1">app.myModules.dbcontrol.DatabaseControl.sql_fetch_one</a></div><div class="ttdeci">def sql_fetch_one(self)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00030">dbcontrol.py:30</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_a30cb2769a65031268fa24ed8631e0657"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a30cb2769a65031268fa24ed8631e0657">app.myModules.dbcontrol.DatabaseControl.sql_execute</a></div><div class="ttdeci">def sql_execute(self, sql)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00022">dbcontrol.py:22</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_a25987d408151bc87ee39480b5688f90d"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a25987d408151bc87ee39480b5688f90d">app.myModules.dbcontrol.DatabaseControl.__cur</a></div><div class="ttdeci">__cur</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00015">dbcontrol.py:15</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_a9c635cd860e54331d646dbebeccfd5f3"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a9c635cd860e54331d646dbebeccfd5f3">app.myModules.dbcontrol.DatabaseControl.sql_fetch_all</a></div><div class="ttdeci">def sql_fetch_all(self)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00034">dbcontrol.py:34</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_aa8759acb2970330dc4e2db44938b8116"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#aa8759acb2970330dc4e2db44938b8116">app.myModules.dbcontrol.DatabaseControl.__init__</a></div><div class="ttdeci">def __init__(self, db_url_)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00006">dbcontrol.py:6</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_a08c3aadcf3019be6076635fca2d9e195"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a08c3aadcf3019be6076635fca2d9e195">app.myModules.dbcontrol.DatabaseControl.commit</a></div><div class="ttdeci">def commit(self)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00038">dbcontrol.py:38</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html">app.myModules.dbcontrol.DatabaseControl</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00005">dbcontrol.py:5</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_af6f66458a8146e2f015f480635270aad"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#af6f66458a8146e2f015f480635270aad">app.myModules.dbcontrol.DatabaseControl.close_connect</a></div><div class="ttdeci">def close_connect(self)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00017">dbcontrol.py:17</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1dbcontrol_1_1_database_control_html_a1e5cc1f312103c3ce87821abcf6ecada"><div class="ttname"><a href="../../d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a1e5cc1f312103c3ce87821abcf6ecada">app.myModules.dbcontrol.DatabaseControl.__conn</a></div><div class="ttdeci">__conn</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/dbcontrol_8py_source.html#l00008">dbcontrol.py:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

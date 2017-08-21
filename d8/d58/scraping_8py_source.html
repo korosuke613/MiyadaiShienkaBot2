@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>宮大支援課お知らせBot2: app/myModules/scraping.py ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">宮大支援課お知らせBot2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d422163b96683743ed3963d4aac17747.html">app</a></li><li class="navelem"><a class="el" href="../../dir_c0f2c7d49cc6ee8b1fe4bb63a70ff899.html">myModules</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">scraping.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d58/scraping_8py.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="../../d2/d3c/namespaceapp_1_1my_modules_1_1scraping.html">    1</a></span>&#160;<span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> urllib.request</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html">Scraping</a>:</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#a548e56945fa568eb0e1c53a22e4b89af">    6</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#a548e56945fa568eb0e1c53a22e4b89af">__init__</a>(self, url=&quot;https://github.com<span class="stringliteral">&quot;):</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="stringliteral">        self.<a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#a5de51ac9eba5012f314f3de9abb5f03e">_url</a> = self.<a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#aee94f0edaed7560ac11c267bcf94bbc9">_soup</a> = </span><span class="keywordtype">None</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        self.<a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#ab17dd78e3e565f2067a46cbf39239aac">set_url</a>(url)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#ab17dd78e3e565f2067a46cbf39239aac">   10</a></span>&#160;    <span class="keyword">def </span><a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#ab17dd78e3e565f2067a46cbf39239aac">set_url</a>(self, _url):</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        self.<a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#a5de51ac9eba5012f314f3de9abb5f03e">_url</a> = _url</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        html = urllib.request.urlopen(self.<a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#a5de51ac9eba5012f314f3de9abb5f03e">_url</a>)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        self.<a class="code" href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#aee94f0edaed7560ac11c267bcf94bbc9">_soup</a> = BeautifulSoup(html, <span class="stringliteral">&quot;html.parser&quot;</span>)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">pass</span></div><div class="ttc" id="classapp_1_1my_modules_1_1scraping_1_1_scraping_html_aee94f0edaed7560ac11c267bcf94bbc9"><div class="ttname"><a href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#aee94f0edaed7560ac11c267bcf94bbc9">app.myModules.scraping.Scraping._soup</a></div><div class="ttdeci">_soup</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/scraping_8py_source.html#l00007">scraping.py:7</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1scraping_1_1_scraping_html"><div class="ttname"><a href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html">app.myModules.scraping.Scraping</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/scraping_8py_source.html#l00005">scraping.py:5</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1scraping_1_1_scraping_html_a548e56945fa568eb0e1c53a22e4b89af"><div class="ttname"><a href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#a548e56945fa568eb0e1c53a22e4b89af">app.myModules.scraping.Scraping.__init__</a></div><div class="ttdeci">def __init__(self, url=&quot;https://github.com&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/scraping_8py_source.html#l00006">scraping.py:6</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1scraping_1_1_scraping_html_a5de51ac9eba5012f314f3de9abb5f03e"><div class="ttname"><a href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#a5de51ac9eba5012f314f3de9abb5f03e">app.myModules.scraping.Scraping._url</a></div><div class="ttdeci">_url</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/scraping_8py_source.html#l00007">scraping.py:7</a></div></div>
+<div class="ttc" id="classapp_1_1my_modules_1_1scraping_1_1_scraping_html_ab17dd78e3e565f2067a46cbf39239aac"><div class="ttname"><a href="../../db/d75/classapp_1_1my_modules_1_1scraping_1_1_scraping.html#ab17dd78e3e565f2067a46cbf39239aac">app.myModules.scraping.Scraping.set_url</a></div><div class="ttdeci">def set_url(self, _url)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d58/scraping_8py_source.html#l00010">scraping.py:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

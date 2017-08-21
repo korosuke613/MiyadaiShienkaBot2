@@ -1,0 +1,5 @@
+<map id="app.miyadai_db.MiyadaiDatabaseOutput.fetch_shienka_news_once" name="app.miyadai_db.MiyadaiDatabaseOutput.fetch_shienka_news_once">
+<area shape="rect" id="node2" href="$d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a30cb2769a65031268fa24ed8631e0657" title="app.myModules.dbcontrol.\lDatabaseControl.sql_execute" alt="" coords="281,5,478,44"/>
+<area shape="rect" id="node3" href="$d3/d81/classapp_1_1my_modules_1_1dbcontrol_1_1_database_control.html#a4df157d65ecae9a7c1c52ae2a42a4aa1" title="app.myModules.dbcontrol.\lDatabaseControl.sql_fetch_one" alt="" coords="276,68,484,107"/>
+<area shape="rect" id="node4" href="$dc/dba/classapp_1_1miyadai__db_1_1_miyadai_data_base.html#a5548c68f23184a8e63a6b3629c7bb359" title="宮大の記事のタプルを辞書型に変換する。 " alt="" coords="283,131,476,169"/>
+</map>

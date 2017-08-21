@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['databasecontrol_2epy',['DatabaseControl.py',['../d0/d5e/_database_control_8py.html',1,'']]]
+  ['dbcontrol_2epy',['dbcontrol.py',['../da/d25/dbcontrol_8py.html',1,'']]]
 ];
