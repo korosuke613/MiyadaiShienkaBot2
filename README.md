@@ -9,3 +9,23 @@
 宮大支援課お知らせBot2は[linebot-miyadai-shienka-news](https://github.com/korosuke613/linebot-miyadai-shienka-news "https://github.com/korosuke613/linebot-miyadai-shienka-news")の後継アプリです。
 
 まだ開発中です。
+
+## ルートの各ファイルの説明
+### CI関連
+| ファイル名 | 説明 |
+|:-----------|:------------|
+| .travis.yml | Travis CIの設定(CI) |
+| .flake8 | Side CIの設定(コードレビュー) |
+| pytest.ini | pytestの設定(テスト) |
+| .coveralls.yml | Coverallsの設定(カバレッジ) |
+| .gitignore | git ignoreの設定 |
+| .gitmodules | git moduleの設定 |
+| Doxyfile | Doxygenの設定(ドキュメント) |
+| py_filter | Doxypypyの設定(ドキュメント) |
+
+### デプロイ関連
+| ファイル名 | 説明 |
+|:-----------|:------------|
+| requirements.txt | pip installの設定 |
+| runtime.txt | Pythonのバージョン設定 |
+| Procfile | Herokuの設定 |
