@@ -21,6 +21,8 @@ def convert(pdf):
 
 
 def download_pdf(pdf_url, file_name):
+    if pdf_url[-4:] != ".pdf":
+        return False
     r = requests.get(pdf_url)
     # ファイルの保存
     # TODO withにする

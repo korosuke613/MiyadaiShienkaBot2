@@ -32,6 +32,6 @@ def test_convert1(fixture_rm_pdf):
     assert os.path.isfile("test.png")
 
 
-# def test_download_pdf2(fixture_rm_pdf):
-#    download_pdf(not_url, "test.pdf")
-#    assert os.path.isfile("test.pdf") is False
+def test_download_pdf2(fixture_rm_pdf):
+    download_pdf(not_url, "test.pdf")
+    assert os.path.isfile("test.pdf") is False
