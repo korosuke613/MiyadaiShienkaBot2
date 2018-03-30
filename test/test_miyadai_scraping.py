@@ -20,7 +20,8 @@ def test_shienka_all_news_1():
 
 def test_check_pdf_1():
     sc = MiyadaiScraping()
-    url = sc.check_pdf("http://gakumu.of.miyazaki-u.ac.jp/gakumu/andsoon/andsoon/3508-2017-08-10-04-08-15.html")
+    url = sc.check_pdf(
+        "http://gakumu.of.miyazaki-u.ac.jp/gakumu/educationalinfo/educationalinfo/3836-2018-03-29-10-00-47.html")
 
     assert url is not None
 
@@ -47,7 +48,7 @@ def fixture_rm_screenshot():
 
 def test_screenshot_news_crop1(fixture_rm_screenshot):
     sc = MiyadaiScraping()
-    url = "http://gakumu.of.miyazaki-u.ac.jp/gakumu/andsoon/andsoon/3508-2017-08-10-04-08-15.html"
+    url = "http://gakumu.of.miyazaki-u.ac.jp/gakumu/educationalinfo/educationalinfo/3836-2018-03-29-10-00-47.html"
     assert sc.screenshot_news_crop(url) is True
 
     assert os.path.isfile("screenshot.png")
@@ -56,5 +57,6 @@ def test_screenshot_news_crop1(fixture_rm_screenshot):
 
 def test_screenshot_news_crop2(fixture_rm_screenshot):
     sc = MiyadaiScraping()
-    url = sc.check_pdf("http://gakumu.of.miyazaki-u.ac.jp/gakumu/andsoon/andsoon/3508-2017-08-10-04-08-15.html")
+    url = sc.check_pdf(
+        "http://gakumu.of.miyazaki-u.ac.jp/gakumu/educationalinfo/educationalinfo/3820-2018-03-20-07-30-54.html")
     assert sc.screenshot_news_crop(url) is False
