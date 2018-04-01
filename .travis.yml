@@ -5,6 +5,9 @@ dist: precise
 python:
   - "3.6"
 
+before_install:
+  - "apt-get install ghostscript"
+
 install:
   - "pip install -r requirements.txt"
   - "pip install coveralls codecov"
